@@ -7,7 +7,7 @@ export const About = () => {
     <>
       <section className="w-full flex flex-col md:flex-row min-h-[70vh] mt-14 py-14">
           <div className="w-full h-full flex flex-col justify-center items-center">
-              <div className="w-[200px] h-[200px] bg-blue-300 rounded-[50%] mb-2"></div>
+              <div className="w-[200px] h-[200px] bg-blue-300 rounded-[50%] mb-2 bg-center bg-no-repeat bg-cover" style={{ backgroundImage:`url('/images/profile.jpg')` }} ></div>
               <p className="text-gray-500 font-light text-md max-w-[400px]">
               Hello! I'm Jorge, a full stack web developer. I can help you in your projects with the construction of Web applications, working from the initial design to production and maintenance. I specialize in the frontend area, although I can develop complete applications that range from eCommerce to incredible personal portfolios to specific tools for your business or occupation. Whatever you need! ask for it and I build it.
               </p>

@@ -10,7 +10,7 @@ export const PersonalProjects = () => {
                 Interfaces, APIs, Mobile Apps, and some "Sunday-made" games. Here you can see my top personal projects.
             </p>
         </div>
-        <div className="w-full">
+        <div className="w-full mt-10">
             {personalProjects.map((project, index)=>(
               <section key={"portProjects"+project.project+index} className={`w-full flex flex-wrap ${index%2!==0 && 'flex-row-reverse'}`}>
                   <div className="w-full sm:w-[50%] h-[400px]  flex flex-col justify-center items-center gap-4">
@@ -24,7 +24,7 @@ export const PersonalProjects = () => {
                           </div>) }
                       </div>
                   </div>
-                  <div className="w-full sm:w-[50%] h-[400px] bg-center bg-no-repeat bg-cover" style={{backgroundImage:`url('${project.image}')`}}></div>
+                  <div className="rounded-3xl border-gray-200 border-[2px] w-full sm:w-[50%] h-[400px] bg-center bg-no-repeat bg-cover" style={{backgroundImage:`url("/images/${project.image}")`}}></div>
               </section>
             ))}
         </div>

@@ -1,22 +1,5 @@
 import React from 'react'
-
-const TESTIMONIES = [
-    {
-        message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero itaque, officiis dicta suscipit necessitatibus perferendis sequi dolorem amet beatae id cumque eos aliquid libero esse eveniet perspiciatis minima recusandae? Doloribus.",
-        name: "Jhon Due",
-        position: "CEO of something"
-    },
-    {
-        message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero itaque, officiis dicta suscipit necessitatibus perferendis sequi dolorem amet beatae id cumque eos aliquid libero esse eveniet perspiciatis minima recusandae? Doloribus.",
-        name: "Jhon Due",
-        position: "CEO of something"
-    },
-    {
-        message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero itaque, officiis dicta suscipit necessitatibus perferendis sequi dolorem amet beatae id cumque eos aliquid libero esse eveniet perspiciatis minima recusandae? Doloribus.",
-        name: "Jhon Due",
-        position: "CEO of something"
-    },
-]
+import { TESTIMONIES } from '../constants/testimonies'
 
 export const Testimonies = () => {
   return (
