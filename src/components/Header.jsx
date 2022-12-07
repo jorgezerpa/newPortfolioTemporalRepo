@@ -6,9 +6,9 @@ export const Header = () => {
      <section className="w-full flex flex-col md:flex-row min-h-[70vh]">
         <div className="flex-1 flex justify-start md:justify-center items-start md:items-center">
             <div className="inline-block px-6 sm:px-0 sm:pl-36">
-                <p className="text-gray-600 text-md font-normal">Hi! I am Jorge and I am a</p>
+                <p className="text-gray-600 text-md font-semibold">Hi! I am Jorge and I am a</p>
                 <h2 className="text-gray-900 font-black text-3xl md:text-4xl lg:text-5xl mb-5">Full Stack <br />Web Developer</h2>
-                <p className="text-gray-500 font-light text-md max-w-[420px]">I love to help people and solve problems, and coding satisfy both necessities.</p>
+                <p className="text-gray-500 font-semibold text-md max-w-[420px]">I love to help people and solve problems, and coding satisfy both necessities.</p>
                 <a href="#contact" className="hover:scale-105 hover:shadow-md hover:shadow-gray-700 mt-5 inline-block bg-blue-900 text-white px-4 py-2 font-bold rounded-lg">contact me</a>
             </div>
         </div>

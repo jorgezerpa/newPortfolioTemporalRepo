@@ -19,7 +19,7 @@ export const Navbar = () => {
                     <img width='120px' src="/images/logo.png" />
                 </div>
             </Link>
-            <ul className="flex justify-center gap-3 text-sm">
+            <ul className="flex justify-center gap-3 text-md text-gray-600 font-semibold">
                 <Link to={'/'}>
                     <div className={`${location.pathname==='/' && 'hidden'}`} href="#home">home</div>
                 </Link>
@@ -37,7 +37,7 @@ export const Navbar = () => {
                 </div>
             </Link>
             <div className="text-2xl z-50" onClick={handleClick}>
-                <TiThMenu size={30} />
+                <TiThMenu size={30} color={showMenu ? '#fff' : '#000'} />
             </div>
             <div id="mobileMenu" className={`w-full ${showMenu ? 'block' : 'hidden'} z-40 absolute top-0 left-0 right-0 bottom-0 bg-[rgba(0,0,0,.7)]`}>
                 <ul className="w-full h-full text-lg text-white font-bold flex flex-col justify-center items-center gap-3">
