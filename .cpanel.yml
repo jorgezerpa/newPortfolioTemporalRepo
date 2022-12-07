@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/zerpcdkk/zerpacode.com
-    - /bin/cp -r * $DEPLOYPATH
+    - export DEPLOYPATH=/home/zerpcdkk/public_html
+    - /bin/cp -r build/* $DEPLOYPATH
