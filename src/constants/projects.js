@@ -4,14 +4,14 @@ export const personalProjects = [
         description: 'This application allows the user to select one deliveryman to an specific hour, and select in a map where this one have to pick up the product and where to find it. The reservation are updated in real time using web sockets.',
         image: 'deliverify.png',
         github: 'https://github.com/jorgezerpa/delivery-app-be',        
-        project: '',        
+        project: 'https://deliverify.vercel.app',        
     },
     {
         title:'Online Courses Platform Admin Panel',
         description: 'This app allows the user to upload and administrate video classes, images & files to create an online course, all from a comfortable admin panel. Then, all this information can be fetched through and API from a client side application.',
         image: 'dashboard.png',
-        github: '',        
-        project: '',        
+        github: 'https://github.com/jorgezerpa/zw-dashboard',        
+        project: 'https://zerpasw-dashboard.vercel.app/',        
     },
     {
         title:'Schnnel Heroe Figma Plugin',
