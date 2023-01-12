@@ -1,10 +1,16 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { personalProjects } from '../constants/projects'
+import { getProjects } from '../services/blogAPI'
 
 export const PersonalProjects = () => {
-
+    const [projects, setProjects] = useState([])
+    useEffect(()=>{window.scrollTo({top:0})},[])
     useEffect(()=>{
-        window.scrollTo({top:0})
+        (async()=>{
+            const result = await getProjects()
+            setProjects(result)
+        })()
+        
     },[])
 
     return (
@@ -18,15 +24,15 @@ export const PersonalProjects = () => {
             </div>
         </div>
         <div className="w-full mt-10">
-            {personalProjects.map((project, index)=>(
+            {projects.length>0 && projects.map((project, index)=>(
               <section key={"portProjects"+project.project+index} className={`w-full flex flex-wrap ${index%2!==0 && 'flex-row-reverse'}`}>
                   <div className="w-full sm:w-[50%] h-[400px]  flex flex-col justify-center items-center gap-4">
                       <h3 className="text-gray-900 font-black text-2xl lg:text-3xl mb-3">{project.title}</h3>
                       <p className="max-w-[500px] text-center mt-2 text-sm font-semibold text-gray-800">{project.description}</p>
                       <div className="mt-3 flex gap-2">
                           { project.github.length > 0 && (<a className='px-5 py-3 bg-blue-800 text-white font-bold rounded-lg shadow-gray-500 shadow-lg hover:scale-105' href={project.github}>Github</a>) }
-                          { project.project.length > 0 && (<a className='px-5 py-3 bg-blue-800 text-white font-bold rounded-lg shadow-gray-500 shadow-lg hover:scale-105' href={project.project}>see Project</a>) }
-                          { (project.github.length === 0 && project.project.length === 0) && (<div className='px-5 py-3  text-gray-700 font-bold rounded-lg' href={project.github}>
+                          { project.link.length > 0 && (<a className='px-5 py-3 bg-blue-800 text-white font-bold rounded-lg shadow-gray-500 shadow-lg hover:scale-105' href={project.project}>see Project</a>) }
+                          { (project.github.length === 0 && project.link.length === 0) && (<div className='px-5 py-3  text-gray-700 font-bold rounded-lg' href={project.github}>
                                 coming soon!
                           </div>) }
                       </div>
