@@ -1,11 +1,15 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer'
 import { Link } from 'react-router-dom'
 
 export const Portfolio = () => {
+  const { ref:refS1, inView:inViewS1 } = useInView({ threshold: .5, triggerOnce:true })
+  const { ref:refS2, inView:inViewS2  } = useInView({ threshold: .5, triggerOnce:true })
+
   return (
     <>
       <h2 id="portfolio" className="text-gray-900 font-black text-center text-3xl md:text-4xl lg:text-5xl mb-10 md:mt-36 mt-20">My Portfolio</h2>
-      <section className="w-full flex flex-col md:flex-row min-h-[50vh]">
+      <section ref={refS1} className={`${inViewS1 && 'animate-scaleX'} opacity-0 origin-left w-full flex flex-col md:flex-row min-h-[50vh]`}>
             <div className="flex-1 flex justify-center items-start md:items-center">
               <div className="inline-block px-6">
                   <h2 className="text-gray-900 text-center md:text-left font-black text-2xl lg:text-3xl mb-5">Personal Projects</h2>
@@ -21,7 +25,7 @@ export const Portfolio = () => {
       
           </div>
       </section>
-      <section className="w-full flex flex-col-reverse md:flex-row min-h-[50vh]">
+      <section ref={refS2} className={`${inViewS2 && 'animate-scaleX'} opacity-0 origin-right w-full flex flex-col md:flex-row min-h-[50vh]`}>
           <div className="min-h-[300px] mt-5 sm:md-0 rounded-xl ml-0 md:ml-2 flex-1 flex justify-center items-center py-14 md:py-0 bg-center bg-no-repeat bg-cover" style={{ backgroundImage: `url('/images/codepen.png')`}}>
   
           </div>
