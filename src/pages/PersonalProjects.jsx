@@ -31,8 +31,8 @@ export const PersonalProjects = () => {
                       <h3 className="text-gray-900 font-black text-2xl lg:text-3xl mb-3">{project.title}</h3>
                       <p className="max-w-[500px] text-center mt-2 text-sm font-semibold text-gray-800">{project.description}</p>
                       <div className="mt-3 flex gap-2">
-                          { project.github && (<a className='px-2 sm:px-5 py-3 bg-blue-800 text-white font-bold rounded-lg shadow-gray-500 shadow-lg text-sm sm:text-baseº hover:scale-105' href={project.github}>Github</a>) }
-                          { project.link && (<a className='px-2 sm:px-5 py-3 bg-blue-800 text-white font-bold rounded-lg shadow-gray-500 shadow-lg text-sm sm:text-base hover:scale-105' href={project.link}>see Project</a>) }
+                          { project.github && (<a className='px-2 sm:px-5 py-3 bg-blue-800 text-white font-bold rounded-lg shadow-gray-500 shadow-lg text-sm sm:text-baseº hover:scale-105' target='_blank' rel='noreferrer'  href={project.github}>Github</a>) }
+                          { project.link && (<a className='px-2 sm:px-5 py-3 bg-blue-800 text-white font-bold rounded-lg shadow-gray-500 shadow-lg text-sm sm:text-base hover:scale-105' target='_blank' rel='noreferrer'  href={project.link}>see Project</a>) }
                           { (!project.github && !project.link) && (<div className='px-5 py-3  text-gray-700 font-bold rounded-lg' href={project.github}>
                                 coming soon!
                           </div>) }
