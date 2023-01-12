@@ -12,6 +12,7 @@ export const PersonalProjects = () => {
         })()
         
     },[])
+    console.log(projects)
 
     return (
     <div>
@@ -30,14 +31,14 @@ export const PersonalProjects = () => {
                       <h3 className="text-gray-900 font-black text-2xl lg:text-3xl mb-3">{project.title}</h3>
                       <p className="max-w-[500px] text-center mt-2 text-sm font-semibold text-gray-800">{project.description}</p>
                       <div className="mt-3 flex gap-2">
-                          { project.github.length > 0 && (<a className='px-2 sm:px-5 py-3 bg-blue-800 text-white font-bold rounded-lg shadow-gray-500 shadow-lg text-sm sm:text-baseº hover:scale-105' href={project.github}>Github</a>) }
-                          { project.link.length > 0 && (<a className='px-2 sm:px-5 py-3 bg-blue-800 text-white font-bold rounded-lg shadow-gray-500 shadow-lg text-sm sm:text-baseº hover:scale-105' href={project.project}>see Project</a>) }
-                          { (project.github.length === 0 && project.link.length === 0) && (<div className='px-5 py-3  text-gray-700 font-bold rounded-lg' href={project.github}>
+                          { project.github && (<a className='px-2 sm:px-5 py-3 bg-blue-800 text-white font-bold rounded-lg shadow-gray-500 shadow-lg text-sm sm:text-baseº hover:scale-105' href={project.github}>Github</a>) }
+                          { project.link && (<a className='px-2 sm:px-5 py-3 bg-blue-800 text-white font-bold rounded-lg shadow-gray-500 shadow-lg text-sm sm:text-baseº hover:scale-105' href={project.project}>see Project</a>) }
+                          { (!project.github && !project.link) && (<div className='px-5 py-3  text-gray-700 font-bold rounded-lg' href={project.github}>
                                 coming soon!
                           </div>) }
                       </div>
                   </div>
-                  <div className="rounded-3xl border-gray-200 border-[2px] w-full sm:w-[50%] h-[300px] bg-center bg-no-repeat bg-cover" style={{backgroundImage:`url("/images/${project.image}")`}}></div>
+                  <div className="rounded-3xl border-gray-200 border-[2px] w-full sm:w-[50%] h-[300px] bg-center bg-no-repeat bg-cover" style={{backgroundImage:`url("${project.image}")`}}></div>
                   {/* <div className="rounded-3xl border-gray-200 border-[2px] w-full sm:w-[50%] h-[300px] bg-center bg-no-repeat bg-cover" style={{backgroundImage:`url("https://uploads-ssl.webflow.com/589ed0903452732276fe0a7f/5c82323817fa41c2faa495aa_Daniel-Korpai-Portfolio.png")`}}></div> */}
               </section>
             ))}
