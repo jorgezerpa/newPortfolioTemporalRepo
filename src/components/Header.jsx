@@ -15,13 +15,13 @@ export const Header = () => {
                 <p className={`text-gray-600 text-md font-semibold opacity-0 ${displayAnimation && 'animate-zoomIn origin-top-left'}`}>Hi! I am Jorge and I am a</p>
                 <h2 className={`text-gray-900 font-black text-3xl md:text-4xl lg:text-5xl mb-5 opacity-0 ${displayAnimation && 'animate-zoomIn1 origin-top-left'}`}>Full Stack <br />Web Developer</h2>
                 <p className={`text-gray-500 font-semibold text-md max-w-[420px] opacity-0 ${displayAnimation && 'animate-zoomIn2  origin-top-left'}`}>I love to help people and solve problems, and coding satisfy both necessities.</p>
-                <a href="#contact" className={`hover:scale-105 hover:shadow-md hover:shadow-gray-700 mt-5 inline-block bg-blue-900 text-white px-4 py-2 font-bold rounded-lg opacity-0 ${displayAnimation && 'animate-slideTL  origin-center'}`}>contact me</a>
+                <a href="#contact" className={`hover:scale-95 hover:shadow-md hover:shadow-gray-700 shadow-md shadow-gray-400 mt-5 inline-block bg-blue-700 text-white px-4 py-2 font-bold rounded-lg opacity-0 ${displayAnimation && 'animate-slideTL  origin-center'}`}>contact me</a>
             </div>
         </div>
         <div className="overflow-hidden relative flex-1 flex justify-center items-center py-14 md:py-0">
             <div className={`${displayAnimation && 'animate-zoomIn4'} opacity-0 origin-top-center`}>
                 <div className="relative w-[200px] h-[200px] rounded-[50%] animate-orbit border-gray-600 border-[1px]">
-                    <div className="top-0 left-0 w-[50px] h-[50px] rounded-[50%] bg-blue-300"></div>
+                    <div className="top-0 left-0 w-[50px] h-[50px] rounded-[50%] bg-gradient-to-b from-green-500 to-green-700"></div>
                 </div>
             </div>
             <div className="scene absolute top-1/2 left-1/2 w-[80px] h-[80px] translate-x-[-40px] translate-y-[-40px]">

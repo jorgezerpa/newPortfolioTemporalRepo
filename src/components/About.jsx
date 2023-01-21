@@ -7,12 +7,6 @@ export const About = () => {
   const { ref:refImage, inView:inViewImage } = useInView({ threshold: 1, triggerOnce:true })
   const { ref:refText, inView:inViewText  } = useInView({ threshold: 1, triggerOnce:true })
   const { ref:refSkills, inView:inViewSkills } = useInView({ threshold: 1, triggerOnce:true })
-  
-  useEffect(()=>{
-    if(inViewImage){
-
-    }
-  }, [inViewImage, inViewText, inViewSkills])
 
 
   return (

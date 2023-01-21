@@ -20,7 +20,7 @@
 	to{ transform: rotateY(360deg); }
 }
 .cube div{
-  outline: 3px solid rgba(255,255,255,.5);
+  	outline: 1px solid rgba(255,255,255,1);
 	font-size: 40px;
 	color: white;
 	position: absolute;
@@ -31,19 +31,19 @@
 	justify-content: center;
 	transform-style: preserve-3d;
 }
-.front{transform: rotateY(0) translateZ(40px); background: linear-gradient(#aaa, #39ff14)}
-.left{transform: rotateY(-90deg) translateZ(40px); background: linear-gradient(#aaa, #39ff14)}
-.back{transform: rotateY(180deg) translateZ(40px); background: linear-gradient(#aaa, #39ff14)}
-.right{transform: rotateY(90deg) translateZ(40px); background: linear-gradient(#aaa, #39ff14)}
+.front{transform: rotateY(0) translateZ(40px); background: linear-gradient(#4d2fd4, #100155)}
+.left{transform: rotateY(-90deg) translateZ(40px); background: linear-gradient(#4d2fd4, #100155)}
+.back{transform: rotateY(180deg) translateZ(40px); background: linear-gradient(#4d2fd4, #100155)}
+.right{transform: rotateY(90deg) translateZ(40px); background: linear-gradient(#4d2fd4, #100155)}
 .top{transform: rotateX(90deg) translateZ(40px); background: #fff}
 .bottom{transform: rotateX(-90deg) 
  translateZ(40px); background: linear-gradient(#000, #39ff14)}
 
 .shadow{
 	transform: scale(.9) rotateX(90deg) translateZ(-150px); 
-	background: #39ff14;
+	background: #100155;
 	filter: blur(40px);
 	box-shadow: 
-		0 0 50px 30px #4aff25,
-		0 0 50px 10px #4aff25 inset;
+		0 0 50px 30px 100155,
+		0 0 50px 10px 100155 inset;
 }
