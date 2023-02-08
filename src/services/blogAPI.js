@@ -5,6 +5,10 @@ export const getProjects = async() => {
     const { data } = await axios.get(`${BASE}/projects`)
     return data
 }
+export const getQuickProjects = async() => {
+    const { data } = await axios.get(`${BASE}/quick-projects`)
+    return data
+}
 export const getTestimonies = async() => {
     const { data } = axios.get(`${BASE}/testimonies`)
     return data

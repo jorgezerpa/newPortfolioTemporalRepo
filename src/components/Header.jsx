@@ -15,7 +15,7 @@ export const Header = () => {
                 <p className={`text-gray-600 text-md font-semibold opacity-0 ${displayAnimation && 'animate-zoomIn origin-top-left'}`}>Hi! I am Jorge and I am a</p>
                 <h2 className={`text-gray-900 font-black text-3xl md:text-4xl lg:text-5xl mb-5 opacity-0 ${displayAnimation && 'animate-zoomIn1 origin-top-left'}`}>Full Stack <br />Web Developer</h2>
                 <p className={`text-gray-500 font-semibold text-md max-w-[420px] opacity-0 ${displayAnimation && 'animate-zoomIn2  origin-top-left'}`}>I love to help people and solve problems, and coding satisfy both necessities.</p>
-                <a href="#contact" className={`hover:scale-95 hover:shadow-md hover:shadow-gray-700 shadow-md shadow-gray-400 mt-5 inline-block bg-blue-700 text-white px-4 py-2 font-bold rounded-lg opacity-0 ${displayAnimation && 'animate-slideTL  origin-center'}`}>contact me</a>
+                <a href="#contact" className={`hover:scale-95 hover:shadow-md hover:shadow-gray-700 shadow-sm shadow-gray-400 mt-5 inline-block bg-blue-700 text-white px-4 py-2 font-bold rounded-sm opacity-0 ${displayAnimation && 'animate-slideTL  origin-center'}`}>contact me</a>
             </div>
         </div>
         <div className="overflow-hidden relative flex-1 flex justify-center items-center py-14 md:py-0">

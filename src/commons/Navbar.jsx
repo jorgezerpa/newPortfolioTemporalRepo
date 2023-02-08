@@ -23,10 +23,10 @@ export const Navbar = () => {
                 <Link to={'/'}>
                     <div className={`${location.pathname==='/' && 'hidden'}`} href="#home">home</div>
                 </Link>
-                <a className={`${location.pathname==='/personalProjects' && 'hidden'}`} href="#home">home</a>
-                <a className={`${location.pathname==='/personalProjects' && 'hidden'}`} href="#about">about</a>
-                <a className={`${location.pathname==='/personalProjects' && 'hidden'}`} href="#portfolio">portfolio</a>
-                <a className={`${location.pathname==='/personalProjects' && 'hidden'}`} href="#contact">contact</a>
+                <a className={`${(location.pathname==='/projects' || location.pathname==='/quick-projects') && 'hidden'}`} href="#home">home</a>
+                <a className={`${(location.pathname==='/projects' || location.pathname==='/quick-projects') && 'hidden'}`} href="#about">about</a>
+                <a className={`${(location.pathname==='/projects' || location.pathname==='/quick-projects') && 'hidden'}`} href="#portfolio">portfolio</a>
+                <a className={`${(location.pathname==='/projects' || location.pathname==='/quick-projects') && 'hidden'}`} href="#contact">contact</a>
             </ul>
         </nav>
 

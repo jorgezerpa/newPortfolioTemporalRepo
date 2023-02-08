@@ -14,8 +14,10 @@ module.exports = {
         zoomIn3: 'zoomIn 1s linear forwards 1.5s',
         zoomIn4: 'zoomIn 1s linear forwards 2s',
         slideTL: 'slideTL .5s ease forwards 3.3s',
+        slideFR: 'slideFR 1s ease-in forwards',
         scaleX: 'scaleX 1s ease-in-out forwards',
         scaleY: 'scaleY .5s ease forwards',
+        scaleY2: 'scaleY 1s ease forwards 1s',
       },
       keyframes:{
         orbit: {
@@ -32,6 +34,11 @@ module.exports = {
         },
         slideTL: {
           '0%': {transform: 'translate(-30px)', opacity: 0},
+          '80%': {transform: 'translate(10px)', opacity: .8},
+          '100%': {transform: 'translate(0px)', opacity: 1},
+        },
+        slideFR: {
+          '0%': {transform: 'translate(300px)', opacity: 0},
           '80%': {transform: 'translate(10px)', opacity: .8},
           '100%': {transform: 'translate(0px)', opacity: 1},
         },

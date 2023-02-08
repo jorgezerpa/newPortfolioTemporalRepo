@@ -1,24 +1,25 @@
 import React, { useEffect, useState } from 'react'
-import { getProjects } from '../services/blogAPI'
+import { getQuickProjects } from '../services/blogAPI'
 
-export const PersonalProjects = () => {
+export const QuickProjects = () => {
     const [projects, setProjects] = useState([])
     useEffect(()=>{window.scrollTo({top:0})},[])
     useEffect(()=>{
         (async()=>{
-            const result = await getProjects()
+            const result = await getQuickProjects()
             setProjects(result)
         })()
         
     },[])
+    console.log(projects)
 
     return (
     <div className='px-4'>
         <div className='bg-gradient-to-b from-blue-500 to-blue-900 py-12 shadow-gray-400 shadow-lg rounded-b-[10%] sm:rounded-2xl mb-32 sm:mb-10'>
-            <h2 className="text-white font-bold text-center text-3xl md:text-4xl lg:text-5xl mb-5 mt-3">Projects</h2>
+            <h2 className="text-white font-bold text-center text-3xl md:text-4xl lg:text-5xl mb-5 mt-3">Quick Projects</h2>
             <div className="w-full flex justify-center">
                 <p className="px-5 max-w-[500px] text-center mt-2 text-md font-semibold text-gray-100">
-                    Interfaces, APIs, Mobile Apps... Here you can see my full stack projects.
+                    Here you can find some "sunday made" projects. Crazy UI ideas, fast landing pages, web games and more.
                 </p>
             </div>
         </div>
