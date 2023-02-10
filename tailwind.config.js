@@ -18,8 +18,21 @@ module.exports = {
         scaleX: 'scaleX 1s ease-in-out forwards',
         scaleY: 'scaleY .5s ease forwards',
         scaleY2: 'scaleY 1s ease forwards 1s',
+        planet: 'planet 4s linear infinite',
+        pulseSlow: 'pulse 5s linear infinite',
+        bounce2: 'bounce2 1.5s ease-in infinite 3s',
       },
       keyframes:{
+        bounce2: {
+          '0%': {transform: 'translateY(-3px)', opacity:1},
+          '50%': {transform: 'translateY(0)', opacity:1},
+          '100%': {transform: 'translateY(-3px)', opacity:1},
+        },
+        planet: {
+          '0%': {transform: 'translateY(20px)'},
+          '50%': {transform: 'translateY(0)'},
+          '100%': {transform: 'translateY(20px)'},
+        },
         orbit: {
           '0%': {transform: 'rotate(0deg)'},
           '100%': {transform: 'rotate(360deg)'},

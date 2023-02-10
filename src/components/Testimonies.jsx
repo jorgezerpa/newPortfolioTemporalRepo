@@ -14,9 +14,9 @@ export const Testimonies = () => {
                 <path d="M44 43.8652L52 27.9142H36V0H64V27.9142L56 43.8652H44ZM8 43.8652L16 27.9142H0V0H28V27.9142L20 43.8652H8Z" fill="#C5C3C3"/>
               </svg>
 
-              <p className="font-normal text-gray-600 text-sm mb-4 italic">{testimony.message}</p>
-              <p className=" text-gray-600 text-xs text-right font-bold mt-3 italic">{testimony.name}</p>
-              <p className="font-normal text-gray-600 text-xs text-right mt-1 italic">{testimony.position}</p>
+              <p className="font-normal text-gray-100 text-sm mb-4 italic">{testimony.message}</p>
+              <p className=" text-gray-200 text-xs text-right font-bold mt-3 italic">{testimony.name}</p>
+              <p className="font-normal text-gray-300 text-xs text-right mt-1 italic">{testimony.position}</p>
           </div>
       ))}
     </div>
