@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <>
-      { isLoading && <div className='w-full h-screen bg-red-500'>cargando</div> }
+      {/* { isLoading && <div className='w-full h-screen bg-red-500'>cargando</div> } */}
       { !isLoading &&  (
         <div>
         { location.pathname==='/' && (

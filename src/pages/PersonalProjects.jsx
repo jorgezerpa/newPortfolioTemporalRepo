@@ -24,7 +24,7 @@ export const PersonalProjects = () => {
         <div className='w-full h-[60px] flex justify-start items-center'>
             <MdOutlineArrowBack size={50} onClick={()=>navigate('/')} />
         </div>
-        <div className='bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 py-12 shadow-gray-400 shadow-lg rounded-b-[10%] sm:rounded-2xl mb-32 sm:mb-10'>
+        <div className='bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 py-12 shadow-gray-400 shadow-lg rounded-[10%] sm:rounded-2xl mb-32 sm:mb-10'>
             <h2 className="text-white font-bold text-center text-3xl md:text-4xl lg:text-5xl mb-5 mt-3">Projects</h2>
             <div className="w-full flex justify-center">
                 <p className="px-5 max-w-[500px] text-center mt-2 text-md font-semibold text-gray-100">

@@ -15,9 +15,9 @@ export const Portfolio = () => {
               <div className='absolute w-[150px] h-[150px] bg-white blur-[130px] animate-pulse rounded-full'></div>
               <div className="flex-1 flex justify-center items-start md:items-center">
                 <div className="inline-block px-6">
-                    <h2 className="text-gray-100 text-center md:text-left font-black text-2xl lg:text-3xl mb-5">Personal Projects</h2>
+                    <h2 className="text-gray-100 text-center md:text-left font-black text-2xl lg:text-3xl mb-5">Projects</h2>
                     <p className="text-gray-300 text-center md:text-left font-semibold text-md max-w-[420px]">
-                      A list of my top projects, pages, web apps, plugins and some games. Hope you enjoy it.                  
+                      A list of my top projects either personal and for my clients.                  
                     </p>
                     <Link to={'/projects'} className="flex justify-center md:justify-start">
                       <div className="hover:scale-105 hover:shadow-md hover:shadow-gray-700 mt-5 inline-block bg-[#a252df] text-white px-4 py-2 font-bold rounded-lg">see projects</div>
